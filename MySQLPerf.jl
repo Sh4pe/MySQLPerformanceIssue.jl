@@ -61,6 +61,17 @@ module Docker
             stop(id)
         end
     end
+
+    ""
+    function make_dump(id, local_file)
+        run(`docker exec $id 
+             mysqldump --user=root 
+             --password=$RootPassword 
+             --result-file=/tmp/dump.sql
+             --databases $DBName`)
+        run(`docker cp $id:/tmp/dump.sql $local_file`)
+    end
+
 end # module Docker
 
 "run code in the context of a connection to a Docker based MySQL database"
