@@ -124,4 +124,4 @@ function wide_query(conn, table_name::String, num_fields::Integer; float_fields=
     size(df)
 end
 
-end # modlue MySQLPerf
+end # module MySQLPerf
