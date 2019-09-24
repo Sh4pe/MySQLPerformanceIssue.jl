@@ -1,6 +1,6 @@
 # Some performance issues with MySQL.jl
 
-Developed for [this issue](...)
+Developed for [this issue](https://github.com/JuliaDatabases/MySQL.jl/issues/130).
 
 
 ## Scripts
